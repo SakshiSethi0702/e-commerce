@@ -16,9 +16,9 @@ const Banner = ({ smallheading, maintextfirst, maintextlast, ptext, btndata, spa
         on == true && <Discountpopup on={on} setoff={setoff} setoverlay={setoverlay} />
       }
       <section className=" bg-[#02a77d0a] md:mt-[160px] mt-[141px]  py-[30px] md:py-[60px]  ">
-        <Solidbutton className={"cursor-pointer"} onClick={() => { setoff(true); setoverlay(true); stopScrolling(true) }} >
+        {/* <Solidbutton className={"cursor-pointer"} onClick={() => { setoff(true); setoverlay(true); stopScrolling(true) }} >
           Testing pop up
-        </Solidbutton>
+        </Solidbutton> */}
         <div className="container flex flex-col    md:gap-[30px] lg:gap-[120px] md:flex-row   justify-between items-center relative ">
           <div>
             <img src={`/images/${image}`} alt="girl" />
