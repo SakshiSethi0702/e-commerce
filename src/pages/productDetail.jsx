@@ -25,9 +25,7 @@ import { useLocation } from 'react-router-dom';
 
 const ProductDetail = () => {
   const { productsdata } = useContext(Products)
-  const location = useLocation();
-  const queryParams = new URLSearchParams(location.search);
-  const productId = queryParams.get('id');
+  const { id } = useParams();
   const [data,setData] = useState({})
 
   useEffect(()=>{
@@ -38,7 +36,7 @@ getProductData()
 
   const getProductData=async(e)=>{
     try {
-    let res=  await fetch('https://dummyjson.com/products/'+productId)
+    let res=  await fetch('https://dummyjson.com/products/'+id)
     res= await res.json()
     console.log(res,"==response");
     // res= res.products.filter(elem => elem.category=="mens-shirts" || elem.category==="tops")
