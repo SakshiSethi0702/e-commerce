@@ -20,7 +20,7 @@ import Swipersection from "../commponents/snippets/sections/swipersection";
 import dealsdata from "../json/dealsdata.json";
 import Swipercardsectioncommon from "../commponents/snippets/swiper/swipercardsectioncommon";
 import Products from "../contextfils/product";
-import { useLocation } from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 
 
 const ProductDetail = () => {
@@ -46,7 +46,7 @@ getProductData()
     }
   }
   function capitalizeFirstLetter(str) {
-    return str.replace(/\b\w/g, function(char) {
+    return str?.replace(/\b\w/g, function(char) {
         return char.toUpperCase();
     });
 }

@@ -18,7 +18,7 @@ const Productcard = ({ flex, data,star }) => {
             : "bg-extra_bg lg:px-[35px] lg:pt-[28px] lg:pb-[18px] pt-[23px] pr-[15px] pl-[16px] pb-[10px] rounded-[10px]  md:w-full"
             } `}
         >
-         <Link to={`/product-detail?id=${data?.id}`}> <img
+         <Link to={`/product-detail/${data?.id}`}> <img
             className={` ${
               flex === false ? "max-w-[181px] w-full max-h-[277px]" : "max-w-[277px] w-full max-h-[277px] h-full"
             } `}

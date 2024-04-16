@@ -973,7 +973,7 @@ function App() {
             />
             <Route element={<ProductFilter />} path="/product-filter" />
             <Route element={<NewArrivals />} path="/new-arrivals" />
-            <Route element={<ProductDetail />} path="/product-detail/:id" />
+            <Route element={<ProductDetail />} path="/product-detail/:id"/>
             <Route element={<Mycart />} path="/cart" />
             <Route element={<Wishlist />} path="/wishlist" />
             <Route element={<Aboutus />} path="/about-us" />
